@@ -1,7 +1,43 @@
 *{
     margin: 0 auto;
     box-sizing: border-box;
-}
-body{
     font-family: 'Roboto', sans-serif;
+}
+.main-container{
+    display: grid;
+    width: 100vw;
+    grid-template-areas: "header header header"
+                         "header-c header-c header-c"
+                         "main main main"
+                         "footer footer footer";
+}
+header{
+    grid-area: header;
+    background-color: #0B121C;
+    width: 100%;
+    display: flex;
+}
+.header-menu{
+    background-color: red;
+    width: 1024px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+.header-menu img{
+    width: 197px;
+    height: 67px;
+}
+.header-content{
+    grid-area: header-c;
+    display: flex;
+}
+main{
+    grid-area: main;
+    display: flex;
+}
+footer{
+    grid-area: footer;
+    display: flex;
 }
