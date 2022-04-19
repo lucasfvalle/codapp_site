@@ -123,18 +123,7 @@ main .main-content-container .services{
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-main .main-content-container .services .services-title{
-    width: 100%;
-    height:3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    font-weight: 400;
-    color: #0B121C;
-    font-size: 24px;
-    
+    margin-top: 2em;
 }
 main .main-content-container .services .services-card-container{
     width: 100%;
@@ -173,8 +162,84 @@ main .main-content-container .services .services-card-container .service-card p{
     text-align: center
 }
 
+/* Portifólio Websites */
+main .main-content-container .port{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEF1F7;
+    margin-top: 2em;
+    border-radius: 15px;
+}
+main .main-content-container .port .port-title{
+    width: 100%;
+    text-align: center;
+    background-color: #0B121C;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;    
+    border-radius: 15px 15px 0px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #EEF1F7
+}
+main .main-content-container .port .port-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    padding: 2em 0px;
+}
+main .main-content-container .port .port-content .port-card{
+    width: 25%;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 20px;
+}
+main .main-content-container .port .port-content .port-card .img{
+    width: 100%;
+    background-color: #303030;
+    height: 170px;
+    border-radius: 20px 20px 0px 0px;
+}
+main .main-content-container .port .port-content .port-card h2{
+    color: #BE2725;
+    width: 100%;
+    padding: 0px 20px;
+    margin: 0.5em 0px;
+}
+main .main-content-container .port .port-content .port-card p{
+    color: #0B121C;
+    width: 100%;
+    padding: 0px 20px;
+    text-align: justify;
+}
+main .main-content-container .port .port-content .port-card .more-btn{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B121C;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #EEF1F7;
+    font-weight: 600;
+}
+
+
+
 footer{
     margin-top: 1em;
     grid-area: footer;
     display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #0B121C;
+    bottom: 0;
+    left: 0;
+    border-top: 10px solid #BE2725;
 }
