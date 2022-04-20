@@ -3,11 +3,14 @@
     box-sizing: border-box;
 }
 body{
+    
     font-family: 'Roboto', sans-serif;
 }
 .main-container{
     width: 100%;
     display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "header header header"
                          "header-c header-c header-c"
                          "main main main"
@@ -19,6 +22,7 @@ header{
     grid-area: header;
     background-color: #0B121C;
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
@@ -258,6 +262,39 @@ main .main-content-container .contact-container .row{
     display: flex;
     column-gap: 1em;
 }
+main .main-content-container .contact-container .row .send-btn{
+    margin-top: 1em;
+    width: 30%;
+    height: 80px;
+    font-size: 24px;
+    color: #EEF1F7;
+    background-color: #BE2725;
+    border: none;
+    border-radius:15px;
+    cursor: pointer;
+}
+main .main-content-container .contact-container .row .send-btn:hover{
+    background-color: #881c1b;
+    transition: all ease 0.5s;
+}
+main .main-content-container .contact-container .row-message{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #BE2725;
+    font-size: 18px;
+    font-weight: 600;
+}
+main .main-content-container .contact-container .row-message label{
+    
+    width: 100%;
+    margin-bottom: 0.2em;
+}
+main .main-content-container .contact-container .row-message textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+}
 main .main-content-container .contact-container .col{
     width: 50%;
     height: 100px;
@@ -276,6 +313,8 @@ main .main-content-container .contact-container .col label{
 main .main-content-container .contact-container .col input{
     width: 100%;
     height: 50px;
+    font-size: 16px;
+    padding: 5px;
 }
 
 footer{
