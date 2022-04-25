@@ -42,7 +42,7 @@ body{
 }
 .container header .header-content-container{
     width: 100%;
-    height: 100vh;
+    height: 100px;
     background-image: url("../imgs/bg-header-content.jpeg");
     background-size: cover;
     opacity: 0.05;
@@ -83,13 +83,31 @@ body{
     width: 1024px;
     height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     justify-content: space-between;
     margin-top: 2em;
     margin-bottom: 2em;
 }
-.container main .main-container .service-card{
+.container main .main-container  .services-title{
+    width: 100%;
+    display: flex;
+    margin-bottom: 2em;
+    margin-left: 10px;
+}
+.container main .main-container  .services-title h2{
+    text-align: left;
+    margin-left: 10px;
+}
+.container main .main-container .services-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    column-gap: 2em;
+}
+
+.container main .main-container .services-container .service-card{
     width: 30%;
     height: 250px;
     background-color: var(--blue);
@@ -100,15 +118,15 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
-.container main .main-container .service-card i{
+.container main .main-container .services-container .service-card i{
     font-size: 7em;
     color: var(--red);
 }
-.container main .main-container .service-card h2{
+.container main .main-container .services-container .service-card h2{
     font-size: 1.5em;
     color: var(--red);
 }
-.container main .main-container .service-card p{
+.container main .main-container .services-container .service-card p{
     font-size: 1em;
     color: var(--white);
     text-align: center;
