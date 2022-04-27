@@ -2,6 +2,7 @@
 *{
     margin: 0 auto;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -226,6 +227,7 @@ body{
     align-items: center;
 
 }
+/* Portifólio Card */
 .container main .main-container .port-container .port-card-container .port-card{
     width: 25%;
     height: 80%;
@@ -266,3 +268,80 @@ body{
     color: var(--white);
     background-color: var(--blue);
 }
+/* Contato */
+.container main .main-container .contact-container{
+    width: 100%;
+    height: 400px;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    justify-content: space-between;
+    border-radius: 10px;
+}
+/* Contact Icon */
+.container main .main-container .contact-container .contact-icon{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.container main .main-container .contact-container .contact-icon i{
+    font-size: 20em;
+    color: var(--blue);
+    opacity: 0.1;
+}
+/* Contact Message */
+.container main .main-container .contact-container .contact-message{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: start;
+}
+.container main .main-container .contact-container .contact-message h2{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--red);
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.container main .main-container .contact-container .contact-message p{
+    font-size: 1.5em;
+    color: var(--blue);
+    margin-left: 0;
+    margin-bottom: 2em;
+    line-height: 1.5;
+}
+.container main .main-container .contact-container .contact-message .contact-button{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 0;
+}
+.container main .main-container .contact-container .contact-message .contact-button:hover{
+    transition: all ease 0.3s;
+    background-color: #9f211f;
+}
+
+/* Footer Container */
+.container footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: var(--blue);
+    border-top: 10px solid var(--red);
+} 
