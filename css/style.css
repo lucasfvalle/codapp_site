@@ -182,3 +182,87 @@ body{
     color: var(--white);
     text-align: center;
 }
+
+/* Portifólios */
+.container main .main-container .port-container{
+    width: 100%;
+    height: 400px;
+    margin-top:2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    justify-content: space-between;
+    border-radius: 10px;
+}
+/* Portifólio Title*/
+.container main .main-container .port-container .port-title{
+    width: 100%;
+    padding-top: 10px;
+    flex-direction: row;
+    background-color: var(--blue);
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+    padding-left: 1em;
+}
+.container main .main-container .port-container .port-title .primary-text{
+    font-size: 1.5em;
+    color: var(--red);
+    width: fit-content;
+}
+.container main .main-container .port-container .port-title .secondary-text{
+    width: fit-content;
+    font-size: 1.5em;
+    color: var(--white);
+    font-weight: 600;
+}
+/* Portifólio Card Container */
+.container main .main-container .port-container .port-card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container main .main-container .port-container .port-card-container .port-card{
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.container main .main-container .port-container .port-card-container .port-card .port-img{
+    width: 100%;
+    height: 50%;
+    background-color: #303030;
+    border-radius: 20px 20px 0 0;
+}
+.container main .main-container .port-container .port-card-container .port-card h2{
+    width: 100%;
+    margin: 0.5em;
+    color: var(--red);
+}
+.container main .main-container .port-container .port-card-container .port-card p{
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: var(--blue);
+}
+.container main .main-container .port-container .port-card-container .port-card .port-card-button{
+    text-decoration: none;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 90%;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: var(--white);
+    background-color: var(--blue);
+}
