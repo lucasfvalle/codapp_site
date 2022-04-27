@@ -161,7 +161,7 @@ body{
 }
 .container main .main-container .services-container .service-card{
     width: 30%;
-    height: 250px;
+    height: fit-content;
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
@@ -183,11 +183,32 @@ body{
     color: var(--white);
     text-align: center;
 }
+.container main .main-container .services-container .service-card .service-button{
+    width: 90%;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2em;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 10px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.container main .main-container .services-container .service-card .service-button i{
+    font-size: 1.2em;
+    color: var(--white);
+}
+.container main .main-container .services-container .service-card .service-button:hover{
+    transition: all ease 0.3s;
+    background-color: #9f211f;
+}
 
 /* Portifólios */
 .container main .main-container .port-container{
     width: 100%;
-    height: 400px;
+    height: fit-content;
     margin-top:2em;
     display: flex;
     flex-direction: column;
@@ -220,17 +241,18 @@ body{
 /* Portifólio Card Container */
 .container main .main-container .port-container .port-card-container{
     width: 100%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1em 0;
 
 }
 /* Portifólio Card */
 .container main .main-container .port-container .port-card-container .port-card{
     width: 25%;
-    height: 80%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -238,7 +260,7 @@ body{
 }
 .container main .main-container .port-container .port-card-container .port-card .port-img{
     width: 100%;
-    height: 50%;
+    height: 150px;
     background-color: #303030;
     border-radius: 20px 20px 0 0;
 }
@@ -267,6 +289,10 @@ body{
     font-size: 1em;
     color: var(--white);
     background-color: var(--blue);
+}
+.container main .main-container .port-container .port-card-container .port-card .port-card-button:hover{
+    transition: all ease 0.3s;
+    background-color: #101b2a;
 }
 /* Contato */
 .container main .main-container .contact-container{
@@ -344,4 +370,30 @@ body{
     display: flex;
     background-color: var(--blue);
     border-top: 10px solid var(--red);
-} 
+    
+}
+.container footer .footer-container{
+    min-width: 1024px;
+    display: flex;
+    color: var(--white);
+    
+}
+.container footer .footer-container .footer-container-title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+.container footer .footer-container .footer-container-title h2{
+    font-size: 2em;
+    color: var(--red);
+}
+.container footer .footer-container .footer-container-title p{
+    font-size: 1.2em;
+    color: var(--white);
+    font-weight:300;
+
+}
+
