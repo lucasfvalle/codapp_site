@@ -366,16 +366,23 @@ body{
 /* Footer Container */
 .container footer{
     width: 100%;
-    height: 400px;
+    height: auto;
     display: flex;
+    flex-direction: column;
     background-color: var(--blue);
     border-top: 10px solid var(--red);
+
+    bottom: 0;
     
 }
 .container footer .footer-container{
-    min-width: 1024px;
+    width: 1024px;
     display: flex;
+    flex-direction: column;
     color: var(--white);
+    
+    justify-content: center;
+    
     
 }
 .container footer .footer-container .footer-container-title{
@@ -394,6 +401,62 @@ body{
     font-size: 1.2em;
     color: var(--white);
     font-weight:300;
+}
+.container footer .footer-container .footer-content-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-left: 10px;
+}
+.container footer .footer-container .footer-content-container .social-media{
+    display: flex;
+    flex-direction: column;
+}
+.container footer .footer-container .footer-content-container .social-media ul{
+    line-height: 1.5;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
 
+}
+.container footer .footer-container .footer-content-container .social-media ul li{
+    margin-left: 0;
+    padding-left: 0;
+}
+.container footer .footer-container .footer-content-container .social-media ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2em;
+}
+.container footer .footer-container .footer-content-container .social-media ul li a:hover{
+    opacity: 0.7;
+    transition: all ease 0.3s;
+}
+.container footer .footer-container .footer-content-container .social-media ul li a i{
+    color: var(--red);
+}
+.container footer .footer-container-copyright{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #060a10;
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+.container footer .footer-container-copyright h2{
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--white)
+}
+.container footer .footer-container-copyright a{
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--white)
+}
+.container footer .footer-container-copyright a:hover{
+    transition: all ease 0.3s;
+    color: #cbcbcc;
 }
 
