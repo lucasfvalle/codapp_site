@@ -163,7 +163,7 @@ body{
 }
 .container main .main-container .services-container .service-card{
     width: 30%;
-    height: fit-content;
+    height: 100%;
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
@@ -184,6 +184,7 @@ body{
     font-size: 1em;
     color: var(--white);
     text-align: center;
+    padding: 0 5px;
 }
 .container main .main-container .services-container .service-card .service-button{
     width: 90%;
