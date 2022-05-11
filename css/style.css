@@ -12,6 +12,7 @@ body{
     --blue: #0B121C;
     --white: #EEF1F7;
     --red: #BE2725;
+    
 }
 /* Grid Container */
 .container{
@@ -282,23 +283,23 @@ body{
     margin-right: 0.5em;
     color: var(--blue);
 }
-.container main .main-container .port-container .port-card-container .port-card .port-card-button{
+.container main .main-container .port-container  .port-card-button{
     text-decoration: none;
     margin-bottom: 1em;
     margin-top: 1em;
-    width: 90%;
+    width: 25%;
     height: 70px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1em;
+    font-size: 1.2em;
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--red);
 }
-.container main .main-container .port-container .port-card-container .port-card .port-card-button:hover{
+.container main .main-container .port-container  .port-card-button:hover{
     transition: all ease 0.3s;
-    background-color: #101b2a;
+    background-color: #9f211f;
 }
 /* Contato */
 .container main .main-container .contact-container{
