@@ -490,8 +490,11 @@ body{
     height: fit-content;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
 }
 .container main .port-page-title h2{
+    font-size: 2.5em;
+    color: var(--red);
     margin: 0;
 }
 .container main .port-page-card{
@@ -500,11 +503,49 @@ body{
 }
 .container main .port-page-card .port-page-card-content{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.container main .port-page-card .port-page-card-content h2{
+    padding-left: 1em;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--red);
+    position: absolute;
+    top: 0;
+}
+.container main .port-page-card .port-page-card-content p{
+    padding-left: 1em;
+    font-size: 1.2em;
+    line-height: 1.5;
+    position: absolute;
+    top: 2em;
+}
+.container main .port-page-card .port-page-card-content a{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-top: 0.6em;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--blue);
+    text-decoration: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+}
+.container main .port-page-card .port-page-card-content a:hover{
+    background-color:#101a29;
 }
 .container main .port-page-img{
     width: 50%;
     height: 50%;
-    border: 1px solid #b6b6b6;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
 }
 .container main .port-page-img img{
     width: 100%;
@@ -969,6 +1010,81 @@ body{
     .container footer .footer-container-copyright a:hover{
         transition: all ease 0.3s;
         color: #cbcbcc;
+    }
+
+    /* Portifolio Page Mobile */
+    .container main .port-page-title{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0;
+        
+    }
+    .container main .port-page-title h2{
+        font-size: 2em;
+        color: var(--red);
+        margin: 0;
+        padding-left: 10px;
+    }
+    .container main .port-page-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2em;
+    }
+    .container main .port-page-card .port-page-card-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+    .container main .port-page-card .port-page-card-content h2{
+        color: var(--red);
+        position: relative;
+        padding: 0;
+        height: auto;
+        margin: 0 1em;
+        padding: 0;
+    }
+    .container main .port-page-card .port-page-card-content p{
+        
+        font-size: 1.2em;
+        line-height: 1.5;
+        position: relative;
+        margin: 0;
+        padding: 0 1em;
+    }
+    .container main .port-page-card .port-page-card-content a{
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        background-color: var(--blue);
+        text-decoration: none;
+        border-radius: 10px;
+        position: relative;
+        margin: 4em 1em 1em 1em;
+        padding: 0;
+        
+    }
+    .container main .port-page-card .port-page-card-content a:hover{
+        background-color:#101a29;
+    }
+    .container main .port-page-img{
+        width: 100%;
+        height: 50%;
+        border: 0px solid #e1e1e1;
+        border-radius: 10px;
+    }
+    .container main .port-page-img img{
+        width: 100%;
+        height: 100%;
     }
 }
 
